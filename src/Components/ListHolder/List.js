@@ -5,6 +5,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { removeList } from "./listHolderSlice";
 import { addToDo, selectToDo, removeToDo } from "../ToDo/toDoSlice";
 import { v4 as uuidv4 } from "uuid";
+import './List.css';
 
 export const List = () => {
     const lists = useSelector(selectListHolder);
@@ -52,7 +53,7 @@ export const List = () => {
     return (
         <div>
             <h2>{list.name}</h2>
-            <button onClick={deleteList}>Delete list</button>
+            <button onClick={deleteList} id='delete'>Delete list</button>
             <form onSubmit={handleSubmit}>
                 <input type='text' placeholder='What to do?' onChange={handleChange} value={toDoItem}/>
                 <input type='submit' value='Add to list' />

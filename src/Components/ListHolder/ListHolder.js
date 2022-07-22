@@ -1,7 +1,8 @@
 import React from "react";
 import { useSelector} from "react-redux";
 import { selectListHolder, } from "./listHolderSlice";
-import { NavLink, Outlet } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom';
+import './ListHolder.css';
 
 
 export const ListHolder = () => {

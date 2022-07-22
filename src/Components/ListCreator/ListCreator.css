@@ -1,0 +1,19 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 2rem;
+    padding: 1rem;
+    border: 3px solid ;
+    background-color: #acacac;
+    min-height: 5rem;
+};
+
+#listName {
+    max-width: 70%;
+};
+
+input#createList {
+    width: 50%;
+    background-color: black;
+}
