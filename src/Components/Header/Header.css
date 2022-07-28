@@ -10,10 +10,16 @@ h1 {
 ul {
     display: flex;
     justify-content: space-around;
+    padding-left: 40px;
+    padding-inline-start: 0;
 }
 
 .navlink {
     text-decoration: none;    
+    background-color: #6c08f4;
+    color: #acacac;
+    padding: 0.5rem;
+    border-radius: 10%;
 }
 
 li {
@@ -26,7 +32,22 @@ li {
 }
 
 .header {
-    border: 5px solid;
+    border: 3px solid;
+    border-radius: 5%;
     margin: 1rem;
     background-color: #acacac;
+}
+
+@media screen and (max-width: 540px) {
+    h1 {
+        font-size: 2rem;
+    };
+
+    li {
+        font-size: 0.75rem;
+    };
+    
+     ul {
+         padding-left: 10px;
+     }
 }

@@ -1,0 +1,32 @@
+.navlink {
+    text-decoration: none;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.lists {
+    border: 2px solid #6c08f4;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    margin-left: 1rem;
+    max-width: 30%;
+
+}
+
+.lists li {
+    list-style: disc;
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+.lists a {
+    text-decoration: none;
+    background-color: #6c08f4;
+    color: #acacac;
+    padding: 2px 4px ;
+    border-radius: 10%;
+    
+}

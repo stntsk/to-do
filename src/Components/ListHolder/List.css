@@ -1,7 +1,31 @@
 h2 {
     text-align: center;
+    text-decoration: underline;
 };
 
-#delete {
-    align-self: center;
+.delete {
+    background-color: red;
+    border: none;
 }
+
+.listDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .listDiv button {
+      border: 1px solid #6c08f4;
+      border-radius: 20%;
+      cursor: pointer;
+      font-size: 0.5rem;
+      padding:0 2px;
+  }
+
+  .list {
+      display: block;
+  }
+
+  .list li {
+    list-style: circle;
+  }

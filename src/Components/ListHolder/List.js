@@ -52,13 +52,13 @@ export const List = () => {
 
     return (
         <div>
-            <h2>{list.name}</h2>
-            <button onClick={deleteList} id='delete'>Delete list</button>
+            <div className="listDiv"><h2>{list.name}</h2> <button onClick={deleteList}>X</button></div>
+            
             <form onSubmit={handleSubmit}>
                 <input type='text' placeholder='What to do?' onChange={handleChange} value={toDoItem}/>
                 <input type='submit' value='Add to list' />
             </form>
-            <ul>
+            <ul className="list">
             {Object.values(toDos).filter(toDo => (toDo.listId === listId)).map((toDo) => (
                 <li key={toDo.id} >{toDo.toDoName} <button onClick={() => (dispatch(removeToDo(toDo.id)))}>Done</button></li>
             ))}</ul>

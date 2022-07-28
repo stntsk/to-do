@@ -5,6 +5,7 @@ form {
     margin: 2rem;
     padding: 1rem;
     border: 3px solid ;
+    border-radius: 7%;
     background-color: #acacac;
     min-height: 5rem;
 };
@@ -13,7 +14,7 @@ form {
     max-width: 70%;
 };
 
-input#createList {
+#createList {
     width: 50%;
     background-color: black;
 }

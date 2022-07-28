@@ -11,18 +11,13 @@ export const ListHolder = () => {
     return (
         <div>
             <h1>To-do lists</h1>
-            <ul>
+            {(lists !== {}) && <ul className="lists">
                 {Object.values(lists).map((list) => (
-                    
                         <li className="list" key={list.id}>
                             <NavLink  to={list.id}>{list.name}</NavLink>
-                        
                         </li>
-                    
-                    
                 ))}
-                
-            </ul>
+            </ul>}
             <Outlet />
         </div>
     )

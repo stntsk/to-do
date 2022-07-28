@@ -9,6 +9,7 @@ import { Header } from '../Components/Header/Header'
 import { ListCreator } from '../Components/ListCreator/ListCreator';
 import { ListHolder } from '../Components/ListHolder/ListHolder';
 import { List } from '../Components/ListHolder/List';
+import Footer from '../Components/Footer/footer';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path=':listId' element={<List />} />
         </Route>
       </Routes>
+      <Footer />
     </div>            
   );
 }
